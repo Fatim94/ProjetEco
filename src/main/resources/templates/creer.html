@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Se connecter</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <th:block th:replace="fragments/_css.html::css"></th:block>
+</head>
+
+<body>
+
+<th:block th:replace="fragments/_header.html::header"></th:block>
+
+
+
+
+    
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+<!--                <img src="../static/img/Seconn.png" alt="">-->
+                <img src="img/Seconn.png" alt="">
+                
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Créer un compte</h6>
+                        <h1 class="display-4">Inscrivez-vous gratuitement</h1>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Prénom et Nom" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Adresse Email ou Tel" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Mot de Passe" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Confirmer le mot de Passe" required="required">
+                                </div>
+                            </div>
+                            
+                            <div> 
+                               
+                                
+                                <button type="button" class="btn btn-success py-3 px-5">Créer un compte</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+<th:block th:replace="fragments/_footer.html::footer"></th:block>
+<th:block th:replace="fragments/_js.html::js"></th:block>
+
+
+
+
+
+</body>
+
+</html>

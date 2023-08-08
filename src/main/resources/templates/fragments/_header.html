@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="header">
+    <!--Start Header top area-->
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header-top-left hidden-xs">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i><span class="__cf_email__" data-cfemail="f29b9c949db2959f939b9edc919d9f">[email&#160:eco@gmail.com]</span></a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>00223 20234563</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header-top-right">
+                        <ul>
+                            <li>
+                                <a th:href="@{/login}"><i class="fa fa-user"></i>Se connecter</a>
+                                <!-- <a href="login.html" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i>login</a> -->
+                            </li>
+                            <li><a th:href="@{/inscription}"><i class="fa fa-sign-in"></i>Inscription</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--End Header top area-->
+    <!--Start Header area-->
+    <header id="header-area">
+        <div class="main-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="logo">
+                            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" /></a> -->
+                            <a href="index.html"><h4 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>ECOTHEQUE</h4></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class="active"><a th:href="@{/index}">Accueil<span class="caret"></span></a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="index-1.html">home-1</a></li>
+                                            <li><a href="index-2.html">home-2</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a th:href="@{/#about}">A Propos</a></li>
+                                    <li><a th:href="@{/cours}">Cours<span class="caret"></span></a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="course-grid.html">course-grid</a></li>
+                                            <li><a href="course-list.html">course-list</a></li>
+                                            <li><a href="course-details.html">course-details</a></li>
+                                            <li><a href="event-grid.html">Event-grid</a></li>
+                                            <li><a href="event-list.html">Event-list</a></li>
+                                            <li><a href="event-details.html">event-details</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a th:href="@{/#temoignage}">Temoignage<span class="caret"></span></a>
+                                        <!-- <ul class="sub-menu text-left" >
+                                            <li><a href="teacher.html">teacher</a></li>
+                                            <li><a href="gallery-1.html">gallery-1</a></li>
+                                            <li><a href="gallery-2.html">gallery-2</a></li>
+                                            <li><a href="login.html">login</a></li>
+                                            <li><a href="registration.html">registration</a></li>
+                                            <li><a href="faq.html">faq</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a href="#">Blog<span class="caret"><i class="fa fa-angle-down"></i></span></a>
+                                        <ul class="sub-menu text-left">
+                                            <li><a href="blog-grid.html">blog-grid</a></li>
+                                            <li><a href="blog-list.html">blog-list</a></li>
+                                            <li><a href="single-blog.html">single-blog</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a th:href="@{/contact}">Contact</a></li>
+                                    <li class="search-icon"><a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                        <div class="search-form">
+                                            <form action="https://webtend.net/demo/html/eduspace/search.php">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Serach here" name="serch">
+                                                    <a href="#" class="serach-btn"><i class="fa fa-search"></i></a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-12"><div class="mobile-menu"></div></div>
+                </div>
+            </div>
+        </div>
+    </header><!--End header area -->
+
+</th:block>
+
+</html>

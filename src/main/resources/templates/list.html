@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact list</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <th:block th:replace="fragments/_css.html::css"></th:block>
+</head>
+<body>
+<div>
+    <h1>Lister les contacts</h1>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <td class="table-dark">Nom</td>
+            <td class="table-dark">Email</td>
+            <td class="table-dark">Numéro de Téléphone</td>
+            <td class="table-dark">Message</td>
+            <td class="table-success">Action</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <th:block th:each="contact : ${contacts}">
+
+            <tr>
+                <td th:text="${contact.nom}"></td>
+                <td th:text="${contact.email}"></td>
+                <td th:text="${contact.numeroDeTelephone}"></td>
+                <td th:text="${contact.message}"></td>
+                <td>
+                    <a th:href="@{'/update/' + ${contact.id}}">Update</a> |
+                    <a th:href="@{'/delete/' + ${contact.id}}" style="color: red">Delete</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
